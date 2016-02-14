@@ -8,6 +8,10 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+// Database
+var MongoClient = require('mongodb').MongoClient;
+var dbURL = 'mongodb://localhost:27017/partrequest'
+
 var app = express();
 
 // view engine setup
